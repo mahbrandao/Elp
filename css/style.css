@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+}
+
+.bnav{
+    width: 100vw;
+    height: 10dvh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.azul{
+    background-color: #372AAC;
+    width: 30vw;
+    height:100dvh;
+}
+
+.branco{
+    width: 70vw;
+    background-color: white;}
+
+.informacoes p{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap:15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
