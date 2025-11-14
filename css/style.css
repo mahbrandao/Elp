@@ -8,6 +8,36 @@ body{
     display: flex;
 }
 
+.azul{
+    background-color: #372AAC;
+    width: 25vw;
+    height:95dvh;
+}
+
+.anav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.sair{
+    display: flex;
+    margin-left: 15px;
+    gap: 15px;
+    margin-top: 75px;
+}
+
 .bnav{
     width: 100vw;
     height: 10dvh;
@@ -16,15 +46,10 @@ body{
     gap: 20px;
 }
 
-.azul{
-    background-color: #372AAC;
-    width: 30vw;
-    height:100dvh;
-}
-
 .branco{
     width: 70vw;
-    background-color: white;}
+    background-color: white;
+}
 
 .informacoes p{
     display: flex;
@@ -32,7 +57,6 @@ body{
     color: white;
     gap:15px;
     padding: 5px;
-    border-radius: 10px;
 }
 
 img{
