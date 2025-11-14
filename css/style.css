@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
 .azul{
     background-color: #372AAC;
     width: 25vw;
-    height:95dvh;
+    height:100dvh;
 }
 
 .anav{
@@ -23,6 +24,12 @@ body{
     color: white;
 }
 
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .informacoes{
     display: flex;
     flex-direction: column;
@@ -31,24 +38,26 @@ body{
     margin-left: 20px;
 }
 
+.left-footer{
+    margin-top: auto;
+    padding: 20px 0 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .sair{
     display: flex;
-    margin-left: 15px;
-    gap: 15px;
-    margin-top: 75px;
+    gap: 12px;
+    color: white;
 }
 
-.bnav{
-    width: 100vw;
-    height: 10dvh;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.usuario{
+    color: white;
 }
 
-.branco{
-    width: 70vw;
-    background-color: white;
+.logado{
+    color: rgb(220, 220, 220);
 }
 
 .informacoes p{
@@ -62,4 +71,101 @@ body{
 img{
     width: 20px;
     height: 20px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    flex: 1;
+    padding: 40px 50px;
+    background-color: #f7f7fb;
+    overflow-y: auto;
+}
+
+.main h1 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #1a1a1a;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: center;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+}
+
+.card h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.card small {
+    font-size: 13px;
+    color: #999;
+}
+
+.card.saldo { border-top: 3px solid #2d0fb5; }
+.card.receitas { border-top: 3px solid #19b15e; }
+.card.despesas { border-top: 3px solid #d13a3a; }
+
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+.transacoes {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.transacoes li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.positivo { color: #19b15e; font-weight: 600; }
+.negativo { color: #d13a3a; font-weight: 600; }
+
+.estoqueazul {
+    color: #4a2ae5;
 }
